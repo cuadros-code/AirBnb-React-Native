@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
   overlay: {
     width: '100%',
     height: '100%',
-    backgroundColor: 'rgba(0,0,0,0.234)',
+    backgroundColor: 'rgba(0,0,0,0.284)',
   },
   image: {
     resizeMode: "cover",
@@ -35,14 +35,13 @@ const styles = StyleSheet.create({
   searchButton: {
     backgroundColor: '#fff',
     height: 50,
-    width: Dimensions.get('screen').width - 20,
     top: 30,
+    marginHorizontal: 40,
     borderRadius: 30,
     marginHorizontal: 10,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    zIndex: 100,
   },
   searchButtonText: {
     fontSize: 17,
