@@ -15,15 +15,21 @@ import {
 
 import HomeScreen from './src/screens/Home';
 import Post from './src/components/Post'
+import data from './assets/data/feed'
+import SearchResults from './src/screens/SearchResults';
+import LocationSearchScreen from './src/screens/LocationSearch';
 
 
 const App: () => Node = () => {
 
+  // const post = data[0]
   return (
     <>
       <SafeAreaView>
         {/* <HomeScreen /> */}
-        <Post />
+        {/* <Post post={post} /> */}
+        {/* <SearchResults /> */}
+        <LocationSearchScreen />
       </SafeAreaView>
     </>
   );
