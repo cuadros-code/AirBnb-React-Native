@@ -18,6 +18,7 @@ import Post from './src/components/Post'
 import data from './assets/data/feed'
 import SearchResults from './src/screens/SearchResults';
 import LocationSearchScreen from './src/screens/LocationSearch';
+import GuestScreen from './src/screens/Guests';
 
 
 const App: () => Node = () => {
@@ -29,7 +30,8 @@ const App: () => Node = () => {
         {/* <HomeScreen /> */}
         {/* <Post post={post} /> */}
         {/* <SearchResults /> */}
-        <LocationSearchScreen />
+        {/* <LocationSearchScreen /> */}
+        <GuestScreen />
       </SafeAreaView>
     </>
   );
