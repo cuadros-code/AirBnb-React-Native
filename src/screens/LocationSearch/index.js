@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
-import { View, Text, TextInput, FlatList, Image } from 'react-native'
-import styles from './styles'
+import { View, Text, TextInput, FlatList } from 'react-native'
 import searchResults from '../../../assets/data/search'
 import Entypo from 'react-native-vector-icons/Entypo'
+import styles from './styles'
+// import { useNavigation } from '@react-navigation/native'
+// const navigation = useNavigation()
 
-
-const LocationSearchScreen = () => {
+const LocationSearchScreen = ({ navigation }) => {
   const [inputText, setInputText] = useState('')
-
 
   return (
     <View style={styles.container}>
@@ -22,7 +22,7 @@ const LocationSearchScreen = () => {
         renderItem={({ item }) => (
           <View
             style={styles.row}
-            onStartShouldSetResponder={() => console.log(item.description)}
+            onStartShouldSetResponder={() => navigation.navigate('Guest')}
           >
             <View style={styles.iconContainer}>
               <Entypo name="location-pin" size={30} />

@@ -3,16 +3,16 @@ import { StyleSheet } from 'react-native'
 const styles = StyleSheet.create({
   overlay: {
     width: '100%',
-    height: '100%',
+    height: 400,
     backgroundColor: 'rgba(0,0,0,0.284)',
   },
   image: {
-    resizeMode: "cover",
+    // resizeMode: "cover",
     justifyContent: 'center',
   },
   title: {
     fontSize: 80,
-    marginTop: 110,
+    marginTop: 10,
     fontWeight: 'bold',
     width: '70%',
     padding: 20,
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     width: 200,
     marginLeft: 20,
     height: 45,
-    marginTop: 30,
+    marginTop: 10,
     borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',
@@ -36,7 +36,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     height: 50,
     top: 30,
-    marginHorizontal: 40,
     borderRadius: 30,
     marginHorizontal: 10,
     flexDirection: 'row',
