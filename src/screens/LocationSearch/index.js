@@ -3,6 +3,7 @@ import { View, Text, Pressable } from 'react-native'
 import Entypo from 'react-native-vector-icons/Entypo'
 import styles, { colors } from './styles'
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete'
+const googleKey = process.env.REACT_APP_KEY_API_GOOGLE
 
 const LocationSearchScreen = ({ navigation }) => {
   const [inputText, setInputText] = useState('')
@@ -28,7 +29,7 @@ const LocationSearchScreen = ({ navigation }) => {
             }
           }}
           query={{
-            key: 'AIzaSyB27JQzd7oNd0g2e6T5bKKRjb1Q-hsElN0',
+            key: googleKey,
             language: 'en',
             types: '(cities)'
           }}
