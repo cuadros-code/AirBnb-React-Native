@@ -1,5 +1,9 @@
 import { StyleSheet } from 'react-native'
 
+export const colors = {
+  grayLigth: '#e1e1e1'
+}
+
 const styles = StyleSheet.create({
   container: {
     margin: 20,
