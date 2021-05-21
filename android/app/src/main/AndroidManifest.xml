@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
   package="com.airbnb">
-
+    
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -21,5 +21,10 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
       </activity>
+      <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyB27JQzd7oNd0g2e6T5bKKRjb1Q-hsElN0"
+      />
+      <uses-library android:name="org.apache.http.legacy" android:required="false"/>
     </application>
 </manifest>
